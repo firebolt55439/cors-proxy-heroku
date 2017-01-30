@@ -110,10 +110,10 @@ var handler = function handler(req, res) {
         res.setHeader('content-type', 'text/html');
         acceptsGzip(req, res, index, indexGzip);
         break;
-    case true:
-        res.writeHead(403);
-        res.end('FORBIDDEN');
-        break;
+    //case true:
+    //    res.writeHead(403);
+    //    res.end('FORBIDDEN');
+    //    break;
     default:
         res.setTimeout(25000);
         res.setHeader('Access-Control-Allow-Origin', '*');
