@@ -12,7 +12,7 @@ var http = require('http'),
 var index = fsRead('index.html');
 var indexGzip = gzip(index);
 
-var port = process.env.PORT || 8080;
+var port = 80;
 var debug = process.argv.indexOf('--debug') != -1;
 
 var errorString = chalk.red;
