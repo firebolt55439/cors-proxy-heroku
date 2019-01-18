@@ -100,6 +100,7 @@ var handleOptions = function handleOptions (res, req) {
             break;
         }
     }
+    opts.headers['User-Agent'] = 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0)';
     return opts;
 };
 
